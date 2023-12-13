@@ -28,6 +28,12 @@ footer{
     color: white;
     font-family: 'LINESeedKR-Bd';
     font-size: 230%;
+    position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0; /* 상하 패딩 설정 */
 }
 #gif-image {
     margin-top: 30px;
