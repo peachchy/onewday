@@ -5,10 +5,10 @@ var myQuestions = [
   {
     question: "다음중 <O-NEW-NOTE>에서 선공개하지 않은 곡은?",
     answers: {
-      a: ' Caramel',
-      b: ' 보틍의 밤',
-      c: ' 기억을 걷다',
-      d: ' Anywhere'
+      a: '  Caramel',
+      b: '  Paradise',
+      c: '  기억을 걷다',
+      d: '  Anywhere'
     },
     correctAnswer: 'c',
     explanation: {
