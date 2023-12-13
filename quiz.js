@@ -3,7 +3,7 @@ var numCorrect = 0; // 정답 수를 저장할 변수 추가
 
 var myQuestions = [
   {
-    question: "다음중 <O-NEW-NOTE>에서 선공개하지 않은 곡은?",
+    question: "다음 중 <O-NEW-NOTE>에서 선공개하지 않은 곡은?",
     answers: {
       a: '  Caramel',
       b: '  Paradise',
