@@ -33,6 +33,7 @@ body, button, input, label, p {
     text-align: center;
     font-family: 'LINESeedKR-Bd';
     color: white;
+	margin-bottom: 5%
 }
 
 #gif-image {
