@@ -76,7 +76,7 @@ body, button, input, label, p {
     background-color: rgba(255, 255, 255, 1.0); /*맨 마지막 부분 조절하면 불투명도*/
     padding: 30px;
     border-radius: 15px;
-    height: 80%;
+    height: 90%;
 }
 
 button {
