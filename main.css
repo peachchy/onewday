@@ -23,16 +23,16 @@ body, button, input, label, p {
     vertical-align: center;
 }
 
-footer{
-    color: white;
+.footer {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 7rem;
+    background: darkorange;
+    text-align: center;
     font-family: 'LINESeedKR-Bd';
-    font-size: 100%;
-    position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0; /* 상하 패딩 설정 */
+    color: white;
 }
 
 #gif-image {
