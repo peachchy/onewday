@@ -2,6 +2,7 @@ body {
     overflow:auto;
     background-repeat: no-repeat;
     background-position: top center; 
+    background-color: #bedee9;
     padding: 50px;
     color: black;
     height: 100%;
@@ -136,6 +137,7 @@ input[type="radio"] {
 
 @media (max-width: 420px) {
     body {
+	overflow:auto;
         height: 100vh;
         background-image: url('background_edit.png');
         background-color: #bedee9;
@@ -145,6 +147,15 @@ input[type="radio"] {
         padding: 20px;
         font-size: 8px; /* 원하는 폰트 크기로 변경 */
     }
+	#background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    z-index: -1;
+}
     #quiz-container {
         height: 95vh;
         padding: 10px;
