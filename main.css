@@ -29,6 +29,20 @@ body {
 	margin-bottom: 5%
 }
 
+.global-nav-item {
+    color: #f07879; /* 원하는 색상으로 변경 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 250%;
+    font-family: 'LINESeedKR-Bd';
+    margin: 5px;
+}
+
+@media (max-width: 420px) {
+.global-nav-item {
+        font-size: 110%; /* 원하는 폰트 크기로 변경 */
+    }
+	}
+
 @font-face {
     font-family: 'GangwonEduSaeeum_OTFMediumA';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff'),
