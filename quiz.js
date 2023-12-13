@@ -279,7 +279,6 @@ window.onload = function() {
 
     // '결과 확인' 버튼 숨기기
     document.getElementById('results-button').style.display = 'none';
-}
 
 
 window.onload = function() {
