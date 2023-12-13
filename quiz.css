@@ -16,25 +16,26 @@ body {
     z-index: -1;
 }
 
-
-
 body, button, input, label, p {
     color: black; /* 글자 색상을 검은색으로 설정 */
     font-family: 'GangwonEduSaeeum_OTFMediumA';
     text-align: center;
     vertical-align: center;
 }
+
 footer{
     color: white;
     font-family: 'LINESeedKR-Bd';
     font-size: 230%;
 }
+
 #gif-image {
     margin-top: 30px;
     margin-bottom: 80px;
     width: 80%;
     height: auto;
 }
+
 #button-container {
     margin-top: 100px;
     display: flex;
@@ -57,12 +58,14 @@ footer{
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'LINESeedKR-Bd';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
 }
+
 #quiz-container {
     background-color: rgba(255, 255, 255, 1.0); /*맨 마지막 부분 조절하면 불투명도*/
     padding: 30px;
@@ -70,13 +73,11 @@ footer{
     height: 3400px;
 }
 
-
 button {
     margin-top: 20px;
     padding: 10px 10px;
     font-size: 550%;
 }
-
 
 #question {
     margin-top: 15px;
@@ -98,6 +99,7 @@ button {
     margin-top: 50px;
     margin-bottom: 10px;
 }
+
 #text-answer {
     padding: 10px 10px;
     display: block;
@@ -108,7 +110,6 @@ button {
     font-size: 550%;
     width: 250px;/* 입력 필드의 너비를 조정하려면 이 값을 변경하세요 */
 }
-
 
 input[type="radio"] {
     transform: scale(3); /* 요소의 크기를 1.5배로 확대 */
@@ -177,6 +178,7 @@ input[type="radio"] {
     width:15%;
     height: 2%;/* 입력 필드의 너비를 조정하려면 이 값을 변경하세요 */
 }
+    
     #results {
         font-size: 500%; /* 원하는 폰트 크기로 변경 */
     }
@@ -184,6 +186,7 @@ input[type="radio"] {
     transform: scale(0.8); /* 요소의 크기를 1.5배로 확대 */
     vertical-align: middle;
     }
+    
     #gif-image {
     width: 250px;
     height: auto;
