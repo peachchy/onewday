@@ -41,6 +41,16 @@ body {
 .global-nav-item {
         font-size: 110%; /* 원하는 폰트 크기로 변경 */
     }
+body {
+        height: 100vh;
+        background-image: url('background_edit.png');
+        background-color: #bedee9;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top center; /* 맨 위부터 시작하도록 설정 */
+        padding: 20px;
+        font-size: 8px; /* 원하는 폰트 크기로 변경 */
+    }
 	}
 
 @font-face {
