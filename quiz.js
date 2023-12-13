@@ -19,7 +19,7 @@ var myQuestions = [
   },
   {
     question: "마누라 자랑은?",
-    correctAnswer: '내특기', '내 특기'
+    correctAnswer: '내 특기',
     explanation: '',
     type: 'shortAnswer'
   },
