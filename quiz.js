@@ -24,36 +24,45 @@ var myQuestions = [
     type: 'shortAnswer'
   },
   {
-    question: "문제 3",
+    question: "다음 중 <바라던바다>에서 진기가 들은 말이 아닌 것은?",
     answers: {
-      a: ' 선택지 1',
-      b: ' 선택지 2',
-      c: ' 선택지 3',
-      d: ' 선택지 4'
+      a: ' 여시',
+      b: ' 나 온유 좋아하네',
+      c: ' 학창시절 첫사랑 만나는 기분이야',
+      d: ' 쟤는 아티스트다'
     },
-    correctAnswer: 'a',
-    explanation: {
+    correctAnswer: 'd',
+    explanation: { https://youtu.be/1iBS_XvBhP4?si=hQkFcRWqH_cThZpE&t=127
       correct: '',
       incorrect: ''
     },
     type: 'multipleChoice'
   },
   {
-    question: "문제 4",
-    correctAnswer: '단답',
-    explanation: '',
-    type: 'shortAnswer'
+    question: "다음 중 온유가 바라던바다에서 부른 곡은?",
+    answers: {
+      a: ' 부디',
+      b: ' 다시 사랑한다 말할까',
+      c: ' 너의 모든 순간',
+      d: ' 스토커'
+    },
+    correctAnswer: 'b',
+    explanation: { https://youtu.be/c7n8UlXN0O4?si=KEgZQNRFOB-WP1bO
+      correct: '',
+      incorrect: ''
+  },
+    type: 'multipleChoice'
   },
   {
-    question: "문제 5",
+    question: "진기의 고3 2학기 중간고사 평균점수는?",
     answers: {
-      a: ' 선택지 1',
-      b: ' 선택지 2',
-      c: ' 선택지 3',
-      d: ' 선택지 4'
+      a: ' 98.7',
+      b: ' 97.8',
+      c: ' 99.1',
+      d: ' 95.4'
     },
     correctAnswer: 'a',
-    explanation: {
+    explanation: { https://youtu.be/NJwLOA9XNag?si=mSRNwhkP7J_Fpf9_&t=173
       correct: '',
       incorrect: ''
     },
@@ -66,15 +75,15 @@ var myQuestions = [
     type: 'shortAnswer'
   },
   {
-    question: "문제 7",
+    question: "다음 중 이작명씨가 작명한 이름이 아닌 것은?",
     answers: {
-      a: ' 선택지 1',
-      b: ' 선택지 2',
-      c: ' 선택지 3',
-      d: ' 선택지 4'
+      a: ' 안시몬스마기',
+      b: ' 이대기',
+      c: ' 찜기',
+      d: ' 진기방기'
     },
-    correctAnswer: 'a',
-    explanation: {
+    correctAnswer: 'b',
+    explanation: { https://youtu.be/Z9JQeSMR0Dw?si=M3f6q9jW8ZFQ75Cl&t=332
       correct: '',
       incorrect: ''
     },
@@ -202,7 +211,7 @@ function checkAnswer() {
 
 
 function nextQuestion() {
-  document.getElementById('gif-image').src = 'IMG_4641.gif';
+  document.getElementById('gif-image').src = 'test.gif';
   if (myQuestions[currentQuestionIndex].type === 'multipleChoice') {
     document.getElementById('choice-a').checked = false;
     document.getElementById('choice-b').checked = false;
