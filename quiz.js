@@ -5,7 +5,7 @@ var myQuestions = [
   {
     question: "다음 중 <O-NEW-NOTE>에서 선공개하지 않은 곡은?",
     answers: {
-      a: ' Caramel',
+      a: ' Caramel',
       b: ' Paradise',
       c: ' 기억을 걷다',
       d: ' Anywhere'
@@ -23,7 +23,6 @@ var myQuestions = [
     explanation: '',
     type: 'shortAnswer'
   },
-
   {
     question: "문제 3",
     answers: {
@@ -183,22 +182,6 @@ function checkAnswer() {
     document.getElementById('gif-image').src = 'wrong.gif';  // 'incorrect_answer.gif'를 실제 이미지 파일 경로로 변경
   }
 
-  function showQuestion(questionIndex) {
-  var question = myQuestions[questionIndex];
-  document.getElementById('question').textContent = question.question;
-
-  if (question.type === 'multipleChoice') {
-    document.getElementById('choices').style.display = '';
-    document.getElementById('text-answer').style.display = 'none';
-    document.getElementById('label-a').textContent = question.answers.a;
-    document.getElementById('label-b').textContent = question.answers.b;
-    document.getElementById('label-c').textContent = question.answers.c;
-    document.getElementById('label-d').textContent = question.answers.d;
-  } else if (question.type === 'shortAnswer') {
-    document.getElementById('choices').style.display = 'none';
-    document.getElementById('text-answer').style.display = 'block';
-  }
-
   // 다음 버튼과 설명을 보이게 함
   if (currentQuestionIndex === myQuestions.length - 1) {
     // 마지막 문제일 경우, '다음' 버튼 대신 '결과 확인' 버튼을 표시
@@ -219,7 +202,7 @@ function checkAnswer() {
 
 
 function nextQuestion() {
-  document.getElementById('gif-image').src = 'test.gif';
+  document.getElementById('gif-image').src = 'IMG_4641.gif';
   if (myQuestions[currentQuestionIndex].type === 'multipleChoice') {
     document.getElementById('choice-a').checked = false;
     document.getElementById('choice-b').checked = false;
@@ -249,6 +232,35 @@ function nextQuestion() {
 
 function showResults() {
     var resultElement = document.getElementById('result');
+    var quizContainerElement = document.getElementById('quiz-container');
+    var resultImageElement = document.getElementById('result-image'); // 이미지 요소 선택
+
+    // 퀴즈 점수를 계산
+    var score = numCorrect / myQuestions.length * 100;
+
+    resultElement.textContent = '당신이 맞힌 정답 수: ' + numCorrect + '/' + myQuestions.length + ', 점수: ' + score.toFixed(2) + '%';
+
+    // 이미지 소스 설정 및 이미지 보이게 하기
+    resultImageElement.src = 'IMG_4641.gif'; // 이미지 파일 경로를 실제 경로로 변경
+    resultImageElement.style.display = 'block'; // 이미지를 보이게 함
+
+    // 퀴즈 컨테이너를 숨기고 결과를 표시
+    document.getElementById('quiz-container').style.display = 'none';
+    document.getElementById('results').style.display = 'flex';  // '결과 확인' 요소를 flex로 설정
+
+    // '결과 확인' 버튼 숨기기
+    document.getElementById('results-button').style.display = 'none';
+}
+
+
+window.onload = function() {
+    showQuestion(currentQuestionIndex);
+    
+    // '결과 확인' 버튼에 이벤트 리스너 추가
+    document.getElementById('results-button').addEventListener('click', showResults);
+
+};
+
     var quizContainerElement = document.getElementById('quiz-container');
     var resultImageElement = document.getElementById('result-image'); // 이미지 요소 선택
 
