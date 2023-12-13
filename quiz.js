@@ -3,12 +3,12 @@ var numCorrect = 0; // 정답 수를 저장할 변수 추가
 
 var myQuestions = [
   {
-    question: "문제 1",
+    question: "다음중 <O-NEW-NOTE>에서 선공개하지 않은 곡은?",
     answers: {
-      a: ' 선택지 1',
-      b: ' 선택지 2',
-      c: ' 선택지 3',
-      d: ' 선택지 4'
+      a: ' Caramel',
+      b: ' 보틍의 밤',
+      c: ' 기억을 걷다',
+      d: ' Anywhere'
     },
     correctAnswer: 'c',
     explanation: {
@@ -18,8 +18,8 @@ var myQuestions = [
     type: 'multipleChoice' // 문제 타입 추가
   },
   {
-    question: "문제 2",
-    correctAnswer: '단답',
+    question: "마누라 자랑은?",
+    correctAnswer: '내특기', '내 특기'
     explanation: '',
     type: 'shortAnswer'
   },
