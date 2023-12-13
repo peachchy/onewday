@@ -32,7 +32,7 @@ var myQuestions = [
       d: ' 쟤는 아티스트다'
     },
     correctAnswer: 'd',
-    explanation: { https://youtu.be/1iBS_XvBhP4?si=hQkFcRWqH_cThZpE&t=127
+    explanation: {
       correct: '',
       incorrect: ''
     },
@@ -47,7 +47,7 @@ var myQuestions = [
       d: ' 스토커'
     },
     correctAnswer: 'b',
-    explanation: { https://youtu.be/c7n8UlXN0O4?si=KEgZQNRFOB-WP1bO
+    explanation: {
       correct: '',
       incorrect: ''
   },
@@ -62,7 +62,7 @@ var myQuestions = [
       d: ' 95.4'
     },
     correctAnswer: 'a',
-    explanation: { https://youtu.be/NJwLOA9XNag?si=mSRNwhkP7J_Fpf9_&t=173
+    explanation: {
       correct: '',
       incorrect: ''
     },
@@ -83,7 +83,7 @@ var myQuestions = [
       d: ' 진기방기'
     },
     correctAnswer: 'b',
-    explanation: { https://youtu.be/Z9JQeSMR0Dw?si=M3f6q9jW8ZFQ75Cl&t=332
+    explanation: {
       correct: '',
       incorrect: ''
     },
