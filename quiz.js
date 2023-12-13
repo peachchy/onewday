@@ -250,7 +250,7 @@ function showResults() {
     resultElement.textContent = '당신이 맞힌 정답 수: ' + numCorrect + '/' + myQuestions.length + ', 점수: ' + score.toFixed(2) + '%';
 
     // 이미지 소스 설정 및 이미지 보이게 하기
-    resultImageElement.src = 'IMG_4641.gif'; // 이미지 파일 경로를 실제 경로로 변경
+    resultImageElement.src = 'yeah.gif'; // 이미지 파일 경로를 실제 경로로 변경
     resultImageElement.style.display = 'block'; // 이미지를 보이게 함
 
     // 퀴즈 컨테이너를 숨기고 결과를 표시
