@@ -137,7 +137,7 @@ input[type="radio"] {
     body {
         height: 100vh;
         background-image: url('background_edit.png');
-        background-color: #9fcc89;
+        background-color: #bedee9;
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: top center; /* 맨 위부터 시작하도록 설정 */
