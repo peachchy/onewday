@@ -69,8 +69,8 @@ var myQuestions = [
     type: 'multipleChoice'
   },
   {
-    question: "문제 6",
-    correctAnswer: '단답',
+    question: "지금까지 발매된 온유의 한국 솔로앨범 수는?",
+    correctAnswer: '3',
     explanation: '',
     type: 'shortAnswer'
   },
@@ -90,18 +90,18 @@ var myQuestions = [
     type: 'multipleChoice'
   },
   {
-    question: "문제 8",
-    correctAnswer: '단답',
+    question: "DICE 티징 당시 가장 처음 공개된 하이라이트 클립은?",
+    correctAnswer: '여우비',
     explanation: '',
     type: 'shortAnswer'
   },
   {
-    question: "문제 9",
+    question: "다음 중 진기가 코스프레 한 적 없는 캐릭터는?",
     answers: {
-      a: ' 선택지 1',
-      b: ' 선택지 2',
-      c: ' 선택지 3',
-      d: ' 선택지 4'
+      a: ' 처키',
+      b: ' 펭귄맨',
+      c: ' 마스크',
+      d: ' 프랑켄슈타인'
     },
     correctAnswer: 'a',
     explanation: {
@@ -111,8 +111,8 @@ var myQuestions = [
     type: 'multipleChoice'
   },
   {
-    question: "문제 10",
-    correctAnswer: '단답',
+    question: "I _ U ♡",
+    correctAnswer: 'O',
     explanation: '',
     type: 'shortAnswer'
   },
@@ -178,7 +178,7 @@ function checkAnswer() {
     numCorrect++; // 정답을 맞췄을 때, 정답 수를 증가
 
     // 정답을 맞췄을 때 이미지 변경
-    document.getElementById('gif-image').src = 'correct.gif';  // 'correct_answer.gif'를 실제 이미지 파일 경로로 변경
+    document.getElementById('gif-image').src = 'correct_edit.gif';  // 'correct_answer.gif'를 실제 이미지 파일 경로로 변경
   } else {
     if (question.type === 'multipleChoice') {
       var correctAnswerText = question.answers[question.correctAnswer];
@@ -188,7 +188,7 @@ function checkAnswer() {
     }
 
     // 정답을 틀렸을 때 이미지 변경
-    document.getElementById('gif-image').src = 'wrong.gif';  // 'incorrect_answer.gif'를 실제 이미지 파일 경로로 변경
+    document.getElementById('gif-image').src = 'wrong_edit.gif';  // 'incorrect_answer.gif'를 실제 이미지 파일 경로로 변경
   }
 
   // 다음 버튼과 설명을 보이게 함
@@ -211,7 +211,7 @@ function checkAnswer() {
 
 
 function nextQuestion() {
-  document.getElementById('gif-image').src = 'test.gif';
+  document.getElementById('gif-image').src = 'test_edit.gif';
   if (myQuestions[currentQuestionIndex].type === 'multipleChoice') {
     document.getElementById('choice-a').checked = false;
     document.getElementById('choice-b').checked = false;
