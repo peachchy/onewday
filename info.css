@@ -1,0 +1,102 @@
+body {
+    overflow:auto;
+    background-repeat: no-repeat;
+    background-position: top center; 
+    padding: 50px;
+    color: black;
+    height: 100%;
+}
+
+#background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    z-index: -1;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 7rem;
+    text-align: center;
+    font-family: 'LINESeedKR-Bd';
+    color: #423030;
+	margin-bottom: 5%
+}
+
+.global-nav-item {
+    color: #f07879; /* 원하는 색상으로 변경 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 250%;
+    font-family: 'LINESeedKR-Bd';
+    margin: 5px;
+}
+
+@media (max-width: 420px) {
+.global-nav-item {
+        font-size: 110%; /* 원하는 폰트 크기로 변경 */
+    }
+body {
+        height: 100vh;
+        background-image: url('background_edit.png');
+        background-color: #bedee9;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top center; /* 맨 위부터 시작하도록 설정 */
+        padding: 20px;
+        font-size: 8px; /* 원하는 폰트 크기로 변경 */
+    }
+	}
+
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff'),
+    url(강원교육새음.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media (max-width: 420px) {
+    body {
+        height: 100vh;
+        background-image: url('main_edit.jpg');
+        background-color: #bedee9;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top center; /* 맨 위부터 시작하도록 설정 */
+        padding: 20px;
+        font-size: 8px; /* 원하는 폰트 크기로 변경 */
+    }
+    footer {
+        font-size: 80%; /* 원하는 폰트 크기로 변경 */
+    }
+    .global-nav-item {
+        font-size: 150%; /* 원하는 폰트 크기로 변경 */
+    }
+}
+@media (max-width: 820px min-width:421px) {
+    body {
+        height: 100%;
+        background-image: url('background_edit.png');
+        background-color: #9fcc89;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top center; /* 맨 위부터 시작하도록 설정 */
+        padding: 20px;
+        font-size: 100%; /* 원하는 폰트 크기로 변경 */
+    }
+.global-nav-item {
+        font-size: 80%; /* 원하는 폰트 크기로 변경 */
+    }

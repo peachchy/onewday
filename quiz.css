@@ -120,7 +120,7 @@ button {
 }
 
 input[type="radio"] {
-    transform: scale(3); /* 요소의 크기를 1.5배로 확대 */
+    transform: scale(2); /* 요소의 크기를 1.5배로 확대 */
     vertical-align: middle;
 }
 
